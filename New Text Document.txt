@@ -1,0 +1,47 @@
+      procedure DC( v1,v2 :array_of integer , var dot :integer )
+
+
+Var 
+i: integer ;
+begin 
+dot:=0;
+if (v1.lenght <> v2.length ) then
+write ( "les tailles sont differants ");
+dot:=nan;
+end if 
+tanque ( i<v2.lengh ) faire
+dot := dot + v1[i]*v2[i];
+end tanque 
+
+     fonction orthogonal (v1,v2:array_of integer )
+
+
+var i ,dot :interger;
+begin 
+dot :=0;
+if (v1.lenght <> v2.length ) then
+write ( "les tailles sont differants ");
+return Nan;
+end if 
+tanque ( i<v2.lengh ) faire
+dot := dot + v1[i]*v2[i];
+end tanque 
+return dot;
+  
+  algorithme orthogo
+var 
+ v1,v2 : ARRAY_OF INTEGER [50];
+    dot : INTEGER;
+begin
+ n1 := read_size();
+    read_array(n1,v1);
+ n2 := read_size();
+    read_array(n2,v2);
+ dot :=  DC(v1,v2);
+    IF (dot = 0) THEN
+        Write("V1 and V2 are orthogonal");
+    ELSE
+        Write("V1 and V2 are not orthogonal");
+    END_IF
+END
+
